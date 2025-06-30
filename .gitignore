@@ -1,0 +1,6 @@
+# Ignore IDE and build files
+.idea/
+*.iml
+target/
+.DS_Store
+Thumbs.db

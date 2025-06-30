@@ -1,0 +1,686 @@
+/*  main */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+
+/* Header */
+/* Initial Header Style */
+#mainHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  padding: 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* After scroll */
+/* #mainHeader.scrolled {
+  background-color: rgba(0, 0, 0, 0.8) !important; /* Dark background after scroll */
+
+#mainHeader {
+  transition: background-color 0.7s ease, color 0.5s ease;
+}
+
+#mainHeader.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #28a745;
+}
+ul.nav-links {
+    margin-bottom: 0px;
+}
+
+/* Login Button in NavaBar */
+.login-btn {
+  margin-left: auto;
+  padding: 5px 25px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #218838;
+  color: #fff;
+}
+
+
+
+/* Offset top padding for sections (to not hide under navbar) */
+section {
+  padding-top: 80px;
+}
+
+/* Banner Section */
+#main-banner {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.6) 50%),
+              url("./Images/banner.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Content Box */
+.content {
+  color: #fff;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Heading */
+.content h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+/* Subheading */
+.content .par {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.content .par-1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+    letter-spacing: 1px;
+
+}
+
+/* Button */
+.content .cn {
+  width: 180px;
+  height: 45px;
+  background: #0b470d;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content .cn a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  line-height: 45px;
+}
+
+.content .cn:hover {
+  background-color: #000;
+}
+
+/* Social Icons */
+.icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.icons a {
+  margin: 0 10px;
+  font-size: 28px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #28a745;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 42px;
+  }
+
+  .content .par,
+  .content .par-1 {
+    font-size: 16px;
+  }
+
+  .content .cn {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .icons a {
+    font-size: 24px;
+    margin: 0 8px;
+  }
+}
+
+/* About Section */
+#about {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+}
+
+#about .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#about p {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Features Section */
+#features {
+  background: #ffffff;
+  padding: 80px 0px 80px;
+  text-align: center;
+}
+
+#features .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#features h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Grid Layout */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Card Styles */
+.feature-card {
+  background-color: #f1f1f1;
+  padding: 30px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* hover effect on cards */
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(84, 133, 67, 0.09);
+  border: solid #0b470d 2px;
+}
+
+
+.feature-card ion-icon {
+  font-size: 40px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-card p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* =================== Testimonial Section =================== */
+.testimonial-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.testimonial-section .section-title {
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 50px;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  padding: 30px 25px;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card .quote {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #28a745;
+  font-weight: 700;
+}
+
+
+/* ======================== Footer =====================*/
+footer {
+  background-color: #0b470d;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0px 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/*  ================== ABOUT-US PAGE =================== */
+/* banner section - 1*/ 
+.cms-section {
+background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
+              url("./Images/about\ sec1.jpg") center center/cover no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 100px 20px;
+
+}
+
+.cms-section .overlay {
+  padding: 80px 20px;
+  border-radius: 8px;
+}
+
+.cms-section h2,
+.cms-section p {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+/* ====== Section 2: About Developer with Image ====== */
+.about-developer {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 70%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.about-text {
+  flex: 1 1 500px;
+  color: #333;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  color: #0b470d;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* ====== Section 3: Mission and Vision ====== */
+.cms-mission {
+  background-color: #e9f5eb;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.cms-mission h2 {
+  font-size: 34px;
+  font-family: 'Lato', sans-serif;
+  color: #0b470d;
+  margin-bottom: 40px;
+}
+
+.mission-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.mission-box {
+  flex: 1 1 300px;
+  background: #fff;
+  border: 2px solid #0b470d;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.mission-box:hover {
+  transform: translateY(-5px);
+}
+
+.mission-box ion-icon {
+  font-size: 40px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.mission-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222;
+  font-family: 'Lato', sans-serif;
+}
+
+.mission-box p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ============ Login Page Form  ================= */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0b470d, #145214);
+  padding: 40px 20px;
+}
+
+.login-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.login-container h2 {
+  margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  color: #0b470d;
+  font-size: 28px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "Raleway", sans-serif;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b470d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #000;
+}
+
+.forgot-password {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.forgot-password a {
+  color: #0b470d;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.register-link {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #0b470d;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Styling error msg */
+
+.error-message {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+/* ===== Register Page ===== */
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #2c6645, #6d9777);
+  padding: 20px;
+}
+
+.auth-box {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.auth-box h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0b470d;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b470d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-box button:hover {
+  background-color: #000;
+}
+
+.login-link,
+.register-link {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.login-link a,
+.register-link a {
+  color: #0b470d;
+  text-decoration: none;
+}
+
+.login-link a:hover,
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/*  Password show/hide icon */
+.password-toggle-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.password-toggle-group input {
+  flex: 1;
+  padding-right: 35px;
+}
+
+.toggle-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+    padding-bottom: 18px;
+}
+
+/* ====== Compliants Page ======================= */
+
+/* New Header for Compliants Page =============== */
+/* Complaint Page Styles */

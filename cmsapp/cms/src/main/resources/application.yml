@@ -1,0 +1,19 @@
+  server:
+    port: 8082
+    servlet:
+      context-path: /api
+
+  spring:
+    application:
+      name: cmsapp
+    datasource:
+      url: jdbc:mysql://localhost:3306/cmsappdb?createDatabaseIfNotExist=true
+      username: root
+      password: user@123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+

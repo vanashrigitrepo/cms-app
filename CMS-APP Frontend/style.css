@@ -680,7 +680,330 @@ background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 5
     padding-bottom: 18px;
 }
 
-/* ====== Compliants Page ======================= */
+/* ====== Feature Page ======================= */
 
-/* New Header for Compliants Page =============== */
-/* Complaint Page Styles */
+/* ========== Features Section ========== */
+/* banner sec  */
+
+
+/*  ================== ABOUT-US PAGE =================== */
+/* banner section - 1*/ 
+.cms-section1 {
+background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%),
+              url("./Images/anime-8788959_1280.jpg") center center/cover no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 0px 20px;
+
+}
+
+.cms-section1 .overlay {
+  padding: 80px 220px;
+  border-radius: 8px;
+}
+
+.mb-445{
+    font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  letter-spacing: 0px;
+  color: #fff;
+  text-align: center;
+}
+
+
+#features {
+  background: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#features .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#features h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #0b470d;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: #f1f1f1;
+  padding: 30px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(84, 133, 67, 0.09);
+  border: solid #0b470d 2px;
+}
+
+.feature-card ion-icon {
+  font-size: 40px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-card p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ========== Choose Us Section ========== */
+.choose-us-section {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.choose-us-section h2 {
+  font-size: 34px;
+  font-family: "Lato", sans-serif;
+  color: #0b470d;
+  margin-bottom: 40px;
+}
+
+.choose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.choose-card {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.choose-card:hover {
+  transform: translateY(-5px);
+  border: solid 2px #0b470d;
+}
+
+.choose-card ion-icon {
+  font-size: 40px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.choose-card h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.choose-card p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ========== How It Works Section ========== */
+.how-it-works-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.how-it-works-section h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 34px;
+  color: #0b470d;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step-box {
+  background-color: #f1f1f1;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.step-box:hover {
+  transform: translateY(-5px);
+  border: 2px solid #0b470d;
+}
+
+.step-box span {
+  font-size: 30px;
+  font-weight: bold;
+  color: #28a745;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.step-box h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.step-box p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ========== Stats Section ========== */
+.stats-section {
+  background-color: #e9f5eb;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.stats-section h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 34px;
+  color: #0b470d;
+  margin-bottom: 40px;
+}
+
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.stat-box {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  border: 2px solid #0b470d;
+}
+
+.stat-box h3 {
+  font-size: 28px;
+  color: #28a745;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+
+/*  Forgot Password Page  */
+
+.forgot-password-section {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.forgot-box h2 {
+  color: #0b470d;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.forgot-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.forgot-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b470d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.forgot-box button:hover {
+  background-color: #000;
+}
+
+.response-message {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back-login {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.back-login a {
+  color: #0b470d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-login a:hover {
+  text-decoration: underline;
+}
